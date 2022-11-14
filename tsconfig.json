@@ -11,7 +11,8 @@
     },
     "sourceMap": true,
     "strict": true,
-    "target": "es6"
+    "target": "es6",
+    "typeRoots": ["node_modules/@types", "src/typing"]
   },
   "include": ["src/**/*", "webpack.config.ts"],
   "ts-node": {
