@@ -2,11 +2,11 @@
   "author": "Joshua Unrau",
   "dependencies": {
     "@react-spring/web": "^9.5.5",
-    "@use-gesture/react": "^10.2.20",
     "classnames": "^2.3.2",
     "html-webpack-plugin": "^5.5.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-icons": "^4.6.0",
     "swiper": "^8.4.4"
   },
   "devDependencies": {
@@ -18,19 +18,20 @@
     "@types/webpack": "^5.28.0",
     "@typescript-eslint/eslint-plugin": "^5.39.0",
     "@typescript-eslint/parser": "^5.39.0",
+    "autoprefixer": "^10.4.13",
     "css-loader": "^6.7.1",
     "eslint": "^8.24.0",
+    "eslint-config-prettier": "^8.5.0",
     "eslint-import-resolver-typescript": "^3.5.1",
     "eslint-plugin-import": "^2.26.0",
     "eslint-plugin-react": "^7.31.8",
     "gh-pages": "^4.0.0",
-    "sass": "^1.55.0",
-    "sass-loader": "^13.1.0",
-    "sort-json": "^2.0.1",
+    "postcss": "^8.4.19",
+    "postcss-loader": "^7.0.1",
+    "prettier": "^2.7.1",
+    "prettier-plugin-tailwindcss": "^0.1.13",
     "style-loader": "^3.3.1",
-    "stylelint": "^14.13.0",
-    "stylelint-config-standard-scss": "^5.0.0",
-    "stylelint-order": "^5.0.0",
+    "tailwindcss": "^3.2.4",
     "text-file-webpack-plugin": "^1.0.2",
     "ts-loader": "^9.4.1",
     "ts-node": "^10.9.1",
@@ -46,12 +47,9 @@
   "scripts": {
     "build": "webpack --mode production",
     "deploy": "npm run build && gh-pages -d dist && rm -rf dist",
-    "eslint": "eslint --fix --ext .tsx,.ts .",
-    "lint": "npm run eslint && npm run stylelint",
-    "sass": "sass src/styles/main.scss dist/main.css",
-    "sort-json": "sort-json *.json",
-    "start": "webpack serve --mode development --open",
-    "stylelint": "stylelint --fix **/*.scss"
+    "format": "npx prettier --write .",
+    "lint": "eslint --fix --ext .tsx,.ts .",
+    "start": "webpack serve --mode development --open"
   },
   "version": "1.0.0"
 }

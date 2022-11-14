@@ -12,22 +12,11 @@ const config: Configuration = {
     rules: [
       {
         test: /\.css$/,
-        use: [
-          'style-loader',
-          'css-loader'
-        ]
+        use: ['style-loader', 'css-loader', 'postcss-loader']
       },
       {
-        test: /\.(jpeg|svg|ttf)$/,
+        test: /\.(jpeg|png|svg|ttf)$/,
         type: 'asset/resource'
-      },
-      {
-        test: /\.scss$/,
-        use: [
-          'style-loader',
-          'css-loader',
-          'sass-loader'
-        ]
       },
       {
         exclude: /node_modules/,
@@ -43,7 +32,7 @@ const config: Configuration = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      favicon: './src/assets/img/favicon.png',
+      favicon: path.join('src', 'assets', 'img', 'favicon.png'),
       title: 'Personal Portfolio of Joshua Unrau'
     }),
     new TextFileWebpackPlugin({

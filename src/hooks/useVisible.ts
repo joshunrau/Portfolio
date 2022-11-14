@@ -1,9 +1,7 @@
-import { useEffect, useState } from 'react';
-
-import type { Ref } from '@/models/common';
+import { useEffect, useState, RefObject } from 'react';
 
 export default function useVisible(
-  ref: Ref,
+  ref: RefObject<HTMLElement | null>,
   options: IntersectionObserverInit
 ): boolean {
   const [visible, setVisible] = useState(false);
