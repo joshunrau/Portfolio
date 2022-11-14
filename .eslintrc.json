@@ -1,0 +1,52 @@
+{
+  "extends": ["@joshunrau/eslint-config/react"],
+  "parserOptions": {
+    "project": ["./tsconfig.json"]
+  },
+  "rules": {
+    "@typescript-eslint/consistent-type-imports": [
+      "error",
+      {
+        "prefer": "type-imports"
+      }
+    ],
+    "arrow-body-style": ["warn", "as-needed"],
+    "arrow-parens": ["warn", "always"],
+    "comma-dangle": ["warn", "never"],
+    "indent": [
+      "warn",
+      2,
+      {
+        "SwitchCase": 1
+      }
+    ],
+    "react/function-component-definition": ["warn", {
+      "namedComponents": "arrow-function",
+      "unnamedComponents": "function-expression"
+    }],
+    "linebreak-style": ["warn", "unix"],
+    "max-len": ["warn", 120],
+    "max-statements-per-line": "warn",
+    "no-multi-spaces": "warn",
+    "no-multiple-empty-lines": ["warn", {
+      "max": 1
+    }],
+    "object-curly-spacing": [
+      "warn",
+      "always"
+    ],
+    "padded-blocks": [
+      "warn",
+      "never"
+    ],
+    "quotes": [
+      "warn",
+      "single"
+    ],
+    "react/jsx-sort-props": "warn",
+    "semi": [
+      "warn",
+      "always"
+    ]
+  }
+}
