@@ -22,7 +22,7 @@ const Projects = () => {
   return (
     <Section id="projects">
       <Section.Body>
-        <Section.Heading text="Projects" />
+        <Section.Heading text="Featured Projects" />
         <Gallery projects={projects} />
       </Section.Body>
       <Section.Image alt="filler" src={fillerImage} />
