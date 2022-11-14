@@ -13,7 +13,7 @@ const Navbar = () => {
   return (
     <div className="sticky bg-slate-900/75">
       <div className="container flex flex-wrap justify-between border-b border-slate-300 py-3">
-        <h3 className="px-1 text-2xl">Joshua Unrau</h3>
+        <h3 className="py-2 text-2xl">Joshua Unrau</h3>
         <button
           className="flex h-6 w-6 flex-col justify-between self-center md:hidden"
           type="button"

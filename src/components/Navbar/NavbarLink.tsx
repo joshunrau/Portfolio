@@ -12,7 +12,7 @@ const NavLink = ({ children, sectionName, ...props }: NavLinkProps) => {
   const globalContext = useContext(GlobalContext);
   return (
     <a
-      className={classNames('border-slate-300 px-1', {
+      className={classNames('border-current py-1 md:px-2', {
         'md:border-b': globalContext?.activeSection === sectionName
       })}
       {...props}
