@@ -70,8 +70,9 @@ const Skills = () => {
   
   return (
     <Section id="skills">
+      <Section.Image alt="filter" src={fillerImage} />
       <Section.Body>
-        <Section.Heading centered text='My Tech Stack' />
+        <Section.Heading centered text="My Tech Stack" />
         <div className="grid grid-cols-5 gap-2" ref={ref}>
           {trail.map((style, index) => (
             <animated.div key={index} style={style}>
@@ -80,7 +81,6 @@ const Skills = () => {
           ))}
         </div>
       </Section.Body>
-      <Section.Image alt="filter" src={fillerImage} />
     </Section>
   );
 };
