@@ -22,7 +22,10 @@ const Section = ({ children, id }: SectionProps) => {
   }, [isVisible]);
 
   return (
-    <section className="container grid grid-cols-1 md:grid-cols-2 h-full snap-start items-center gap-10" ref={ref}>
+    <section
+      className="container grid h-full snap-start grid-cols-1 items-center gap-10 md:grid-cols-2"
+      ref={ref}
+    >
       {children}
     </section>
   );

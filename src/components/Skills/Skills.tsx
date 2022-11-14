@@ -45,29 +45,29 @@ const skills = [
 ];
 
 const Skills = () => {
-    const ref = useRef(null);
-    const isVisible = useVisible(ref, {
-      threshold: 0.5
+  const ref = useRef(null);
+  const isVisible = useVisible(ref, {
+    threshold: 0.5
+  });
+
+  const config = {
+    mass: 1,
+    tension: 200
+  };
+
+  const [trail, api] = useTrail(skills.length, () => ({
+    config,
+    opacity: 0,
+    scale: 0
+  }));
+
+  useEffect(() => {
+    api.start({
+      opacity: 1,
+      scale: 1
     });
+  }, [isVisible]);
 
-    const config = {
-      mass: 1,
-      tension: 200
-    };
-
-    const [trail, api] = useTrail(skills.length, () => ({
-      config,
-      opacity: 0,
-      scale: 0
-    }));
-
-    useEffect(() => {
-      api.start({
-        opacity: 1,
-        scale: 1
-      });
-    }, [isVisible]);
-  
   return (
     <Section id="skills">
       <Section.Image alt="filter" src={fillerImage} />

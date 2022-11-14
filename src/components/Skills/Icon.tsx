@@ -43,7 +43,9 @@ const Icon = ({ name, icon }: SkillProps) => {
       onMouseLeave={handleMouseLeave}
     >
       <AnimatedIcon className="h-10 w-10" style={iconAnimationProps} />
-      <animated.span className='mt-2' style={textAnimationProps}>{name}</animated.span>
+      <animated.span className="mt-2" style={textAnimationProps}>
+        {name}
+      </animated.span>
     </animated.div>
   );
 };

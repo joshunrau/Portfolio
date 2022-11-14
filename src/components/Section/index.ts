@@ -7,4 +7,4 @@ export default Object.assign(Section, {
   Body: Body,
   Image: Image,
   Heading: Heading
-})
+});

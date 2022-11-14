@@ -1,9 +1,8 @@
 import React from 'react';
 
+import { SiGithub } from 'react-icons/si';
 import { EffectCards, Mousewheel, Navigation, Pagination } from 'swiper';
 import { Swiper, SwiperProps, SwiperSlide } from 'swiper/react';
-
-import { SiGithub } from 'react-icons/si';
 
 import 'swiper/css';
 import 'swiper/css/effect-cards';
@@ -22,7 +21,7 @@ const swiperProps: SwiperProps = {
 };
 
 interface GalleryProps {
-  projects: Project[]
+  projects: Project[];
 }
 
 const Gallery = ({ projects }: GalleryProps) => {

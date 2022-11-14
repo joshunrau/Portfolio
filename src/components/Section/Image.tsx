@@ -1,8 +1,8 @@
 import React from 'react';
 
 interface ImageProps {
-  alt: string
-  src: string
+  alt: string;
+  src: string;
 }
 
 const Image = ({ alt, src }: ImageProps) => {
@@ -11,6 +11,6 @@ const Image = ({ alt, src }: ImageProps) => {
       <img src={src} alt={alt} />
     </div>
   );
-}
+};
 
 export { Image as default, ImageProps };

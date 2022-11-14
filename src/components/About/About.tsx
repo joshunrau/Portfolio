@@ -12,7 +12,7 @@ const About = () => (
         on the Douglas Informatics Platform.
       </p>
     </Section.Body>
-    <Section.Image alt='avatar' src={avatar} />
+    <Section.Image alt="avatar" src={avatar} />
   </Section>
 );
 
