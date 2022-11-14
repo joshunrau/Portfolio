@@ -10,7 +10,7 @@ import 'swiper/css/pagination';
 
 const swiperProps: SwiperProps = {
   effect: 'cards',
-  className: 'h-96',
+  className: 'h-96 p-10',
   grabCursor: true,
   loop: true,
   mousewheel: {
@@ -26,7 +26,7 @@ interface GalleryProps {
 
 const Gallery = ({ projects }: GalleryProps) => {
   return (
-    <div className="border border-stone-50">
+    <div>
       <Swiper {...swiperProps}>
         {projects.map((project) => (
           <SwiperSlide className="rounded-3xl bg-slate-800 p-5" key={project.name}>
