@@ -3,5 +3,5 @@
   "parserOptions": {
     "project": ["./tsconfig.json"]
   },
-  "ignorePatterns": ["*.cjs", "vite.config.ts"]
+  "ignorePatterns": ["*.cjs"]
 }
