@@ -1,10 +1,13 @@
-import type { JestConfigWithTsJest } from 'ts-jest'
+import { pathsToModuleNameMapper, JestConfigWithTsJest } from 'ts-jest';
+
+import { compilerOptions } from './tsconfig.json';
 
 const jestConfig: JestConfigWithTsJest = {
-  // [...]
-  // Replace `ts-jest` with the preset you want to use
-  // from the above list
+  moduleNameMapper: pathsToModuleNameMapper(compilerOptions.paths),
+  modulePaths: [compilerOptions.baseUrl],
   preset: 'ts-jest',
-}
+  roots: ['<rootDir>'],
+  setupFilesAfterEnv: ['@testing-library/jest-dom/extend-expect']
+};
 
-export default jestConfig
+export default jestConfig;

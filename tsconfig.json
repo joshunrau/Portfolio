@@ -9,6 +9,7 @@
     "paths": {
       "@/*": ["src/*"]
     },
+    "resolveJsonModule": true,
     "sourceMap": true,
     "strict": true,
     "target": "es6",
