@@ -10,7 +10,7 @@
     "lint": "eslint --fix --ext .tsx,.ts .",
     "preview": "vite preview",
     "start": "vite --open",
-    "test": "vitest --globals"
+    "test": "vitest"
   },
   "dependencies": {
     "@react-spring/web": "^9.5.5",
@@ -23,6 +23,7 @@
   "devDependencies": {
     "@joshunrau/eslint-config": "^1.0.3",
     "@react-spring/types": "^9.5.5",
+    "@types/jsdom": "^20.0.1",
     "@types/node": "^18.11.9",
     "@types/react": "^18.0.24",
     "@types/react-dom": "^18.0.8",
@@ -36,6 +37,7 @@
     "eslint-import-resolver-typescript": "^3.5.2",
     "eslint-plugin-import": "^2.26.0",
     "eslint-plugin-react": "^7.31.10",
+    "jsdom": "^20.0.2",
     "postcss": "^8.4.19",
     "prettier": "^2.7.1",
     "prettier-plugin-tailwindcss": "^0.1.13",
