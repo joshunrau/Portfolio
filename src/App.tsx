@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
 
-import About from '@/components/About';
-import Navbar from '@/components/Navbar';
-import Projects from '@/components/Projects';
-import Skills from '@/components/Skills';
-import GlobalContext from '@/store/GlobalContext';
+import About from './components/About';
+import Navbar from './components/Navbar';
+import Projects from './components/Projects';
+import Skills from './components/Skills';
+import GlobalContext from './store/GlobalContext';
 
 const App = () => {
   const [activeSection, setActiveSection] = useState<SectionName>('about');

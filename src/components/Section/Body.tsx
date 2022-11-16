@@ -8,4 +8,4 @@ const Body = ({ children }: BodyProps) => {
   return <div className="flex-1">{children}</div>;
 };
 
-export { Body as default, BodyProps };
+export default Body;

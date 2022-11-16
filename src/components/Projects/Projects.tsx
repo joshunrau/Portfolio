@@ -1,9 +1,9 @@
 import React from 'react';
 
-import Gallery from './Gallery';
+import fillerImage from '../../assets/img/skills-filler.svg';
+import Section from '../../components/Section';
 
-import fillerImage from '@/assets/img/skills-filler.svg';
-import Section from '@/components/Section';
+import Gallery from './Gallery';
 
 const projects: Project[] = [
   {

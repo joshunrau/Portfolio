@@ -19,12 +19,12 @@ import {
   SiWebpack
 } from 'react-icons/si';
 
-import Icon from './Icon';
+import fillerImage from '../../assets/img/skills-filler.svg';
+import Section from '../../components/Section';
+import useVisible from '../../hooks/useVisible';
+import Skill from '../../models/Skill';
 
-import fillerImage from '@/assets/img/skills-filler.svg';
-import Section from '@/components/Section';
-import useVisible from '@/hooks/useVisible';
-import Skill from '@/models/Skill';
+import Icon from './Icon';
 
 const skills = [
   new Skill('Bootstrap', SiBootstrap),

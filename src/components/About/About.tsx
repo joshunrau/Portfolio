@@ -1,7 +1,7 @@
 import React from 'react';
 
-import avatar from '@/assets/img/avatar.png';
-import Section from '@/components/Section';
+import avatar from '../../assets/img/avatar.png';
+import Section from '../Section';
 
 const About = () => (
   <Section id="about">

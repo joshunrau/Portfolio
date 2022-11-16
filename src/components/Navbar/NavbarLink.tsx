@@ -2,7 +2,7 @@ import React, { useContext } from 'react';
 
 import classNames from 'classnames';
 
-import GlobalContext from '@/store/GlobalContext';
+import GlobalContext from '../../store/GlobalContext';
 
 interface NavLinkProps extends React.ComponentPropsWithoutRef<'a'> {
   sectionName: string;

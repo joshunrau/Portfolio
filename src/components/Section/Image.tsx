@@ -13,4 +13,4 @@ const Image = ({ alt, src }: ImageProps) => {
   );
 };
 
-export { Image as default, ImageProps };
+export default Image;

@@ -5,9 +5,7 @@ import ReactDOM from 'react-dom/client';
 import App from './App';
 import './styles.css';
 
-const root = document.createElement('div');
-root.id = 'root';
-document.body.appendChild(root);
+const root = document.getElementById('root') as HTMLDivElement;
 ReactDOM.createRoot(root).render(
   <React.StrictMode>
     <App />

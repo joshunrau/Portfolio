@@ -1,7 +1,7 @@
 import React, { useContext, useEffect, useRef } from 'react';
 
-import useVisible from '@/hooks/useVisible';
-import GlobalContext from '@/store/GlobalContext';
+import useVisible from '../../hooks/useVisible';
+import GlobalContext from '../../store/GlobalContext';
 
 interface SectionProps {
   children: [React.ReactElement, React.ReactElement]; // [Body, Image]
