@@ -1,9 +1,6 @@
 import { useEffect, useState, RefObject } from 'react';
 
-export default function useVisible(
-  ref: RefObject<HTMLElement | null>,
-  options: IntersectionObserverInit
-): boolean {
+export default function useVisible(ref: RefObject<HTMLElement | null>, options: IntersectionObserverInit): boolean {
   const [visible, setVisible] = useState(false);
 
   const handleIntersect: IntersectionObserverCallback = ([entry]) => {

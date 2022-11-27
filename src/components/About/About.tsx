@@ -7,9 +7,7 @@ const About = () => (
   <Section id="about">
     <Section.Body>
       <Section.Heading text="Hi, I'm Josh" />
-      <p>
-        I am a software developer specializing in Python and JavaScript.
-      </p>
+      <p>I am a software developer specializing in Python and JavaScript.</p>
     </Section.Body>
     <Section.Image alt="avatar" src={avatar} />
   </Section>
