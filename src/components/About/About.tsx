@@ -8,8 +8,7 @@ const About = () => (
     <Section.Body>
       <Section.Heading text="Hi, I'm Josh" />
       <p>
-        I am a full stack developer specializing in Python and JavaScript. Currently, I am working
-        on the Douglas Informatics Platform.
+        I am a software developer specializing in Python and JavaScript.
       </p>
     </Section.Body>
     <Section.Image alt="avatar" src={avatar} />

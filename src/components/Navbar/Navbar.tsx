@@ -11,7 +11,7 @@ const Navbar = () => {
   const handleNavbarLinkClick = () => setIsToggled(false);
 
   return (
-    <div className="sticky bg-slate-900/75">
+    <div className="absolute w-full bg-slate-900/75">
       <div className="container flex flex-wrap justify-between border-b border-slate-300 py-3">
         <h3 className="py-2 text-2xl">Joshua Unrau</h3>
         <button
