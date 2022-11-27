@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import classNames from 'classnames';
 
 import NavbarLink from './NavbarLink';
+import NavbarToggle from './NavbarToggle';
 
 const Navbar = () => {
   const [isToggled, setIsToggled] = useState(false);
@@ -14,15 +15,7 @@ const Navbar = () => {
     <div className="absolute w-full bg-slate-900/75">
       <div className="container flex flex-wrap justify-between border-b border-slate-300 py-3">
         <h3 className="py-2 text-2xl">Joshua Unrau</h3>
-        <button
-          className="flex h-6 w-6 flex-col justify-between self-center md:hidden"
-          type="button"
-          onClick={handleToggle}
-        >
-          <div className="h-0.5 w-full bg-slate-300" />
-          <div className="h-0.5 w-full bg-slate-300" />
-          <div className="h-0.5 w-full bg-slate-300" />
-        </button>
+        <NavbarToggle onClick={handleToggle} />
         <nav
           className={classNames(
             'flex max-h-0 w-full flex-col overflow-hidden text-xl md:max-h-fit md:w-auto md:flex-row md:items-center',
