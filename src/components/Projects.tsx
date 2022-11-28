@@ -1,9 +1,12 @@
 import React from 'react';
 
-import fillerImage from '../../assets/img/skills-filler.svg';
-import Section from '../../components/Section';
-
 import Gallery from './Gallery';
+import styles from './Projects.module.scss';
+import Section from './Section';
+
+import fillerImage from '@/assets/img/skills-filler.svg';
+import { Project } from '@/interfaces';
+
 
 const projects: Project[] = [
   {
@@ -20,12 +23,12 @@ const projects: Project[] = [
 
 const Projects = () => {
   return (
-    <Section id="projects">
-      <Section.Body>
-        <Section.Heading text="Featured Projects" />
+    <Section className={styles.projects} id="projects">
+      <div className={styles.content}>
+        <h3 className={styles.heading}>Featured Projects</h3>
         <Gallery projects={projects} />
-      </Section.Body>
-      <Section.Image alt="filler" src={fillerImage} />
+      </div>
+      <img className={styles.image} alt="filler" src={fillerImage} />
     </Section>
   );
 };

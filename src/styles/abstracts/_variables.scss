@@ -1,0 +1,18 @@
+@use "sass:map";
+@use "colors";
+
+$base-font-size: 1rem;
+$base-spacing: 0.5rem;
+$default-bg-color: map.get(colors.$slates, 900);
+$default-text-color: map.get(colors.$slates, 300);
+
+// Navbar
+$navbar-container-padding: $base-spacing;
+$navbar-heading-font-size: $base-font-size * 1.5;
+$navbar-link-font-size: $base-font-size * 1.25;
+$navbar-line-height: 1.5;
+$navbar-link-count: 4;
+
+// Layout
+$header-height: $navbar-heading-font-size * $navbar-line-height + $base-spacing * 4;
+$main-height: calc(100vh - $header-height);

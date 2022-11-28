@@ -1,0 +1,30 @@
+@use "@/styles/abstracts/mixins";
+
+.skills {
+  display: flex;
+}
+
+.image {
+  width: 50%;
+}
+
+.content {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 50%;
+}
+
+.heading {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+  margin-bottom: 0.75rem;
+  text-align: center;
+}
+
+.grid {
+  display: grid;
+  gap: 0.5rem;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+}

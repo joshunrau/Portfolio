@@ -1,0 +1,74 @@
+@use "sass:color";
+@use "sass:map";
+@use "@/styles/abstracts/mixins";
+@use "@/styles/abstracts/variables";
+
+.navbar {
+  backdrop-filter: blur(12px);
+  background-color: color.adjust(variables.$default-bg-color, $alpha: -0.15);
+  height: variables.$header-height;
+  overflow: hidden;
+  transition: height 300ms;
+
+  @include mixins.mobile {
+    &.open {
+      height: 100vh;
+    }
+  }
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  @include mixins.container;
+}
+
+.heading {
+  font-size: variables.$navbar-heading-font-size;
+  line-height: variables.$navbar-line-height;
+  padding: variables.$base-spacing;
+}
+
+.toggle {
+  background-color: inherit;
+  border: none;
+  color: variables.$default-text-color;
+  padding: variables.$base-spacing;
+
+  &Icon {
+    height: variables.$navbar-heading-font-size * variables.$navbar-line-height;
+  }
+
+  @include mixins.desktop {
+    display: none;
+  }
+}
+
+.nav {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+  @include mixins.desktop {
+    align-items: center;
+    flex-direction: row;
+    width: auto;
+  }
+}
+
+.link {
+  color: inherit;
+  font-size: variables.$navbar-link-font-size;
+  line-height: variables.$navbar-line-height;
+  padding: calc(variables.$base-spacing / 2) variables.$base-spacing;
+  text-decoration: none;
+  text-transform: capitalize;
+
+  @include mixins.desktop {
+    &.active {
+      border-bottom: 1px solid variables.$default-text-color;
+    }
+  }
+}

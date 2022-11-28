@@ -1,0 +1,23 @@
+@use "sass:map";
+@use "@/styles/abstracts/colors";
+
+.swiper {
+  height: 24rem;
+  padding: 2.5rem;
+}
+
+.slide {
+  background-color: map.get(colors.$slates, 800);
+  border-radius: 1.5rem;
+  padding: 1.25rem;
+}
+
+.heading {
+  font-size: 1.25rem;
+  font-weight: 800;
+}
+
+.icon {
+  height: 2.5rem;
+  width: auto;
+}

@@ -1,5 +1,7 @@
 import { createContext, type Dispatch, type SetStateAction } from 'react';
 
+import { type SectionName } from '@/interfaces';
+
 interface GlobalContextInterface {
   activeSection: SectionName;
   setActiveSection: Dispatch<SetStateAction<SectionName>>;

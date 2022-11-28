@@ -1,0 +1,11 @@
+@use "@/styles/abstracts/mixins";
+@use "@/styles/abstracts/variables";
+
+.section {
+  display: flex;
+  height: 100%;
+  padding: variables.$base-spacing * 2;
+  scroll-snap-align: start;
+
+  @include mixins.container(2);
+}

@@ -3,6 +3,8 @@ import React from 'react';
 import { animated, useSpring } from '@react-spring/web';
 import { type IconType } from 'react-icons';
 
+import styles from './Icon.module.scss';
+
 interface SkillProps {
   icon: IconType;
   name: string;
@@ -37,13 +39,9 @@ const Icon = ({ name, icon }: SkillProps) => {
   };
 
   return (
-    <animated.div
-      className="h-26 w-26 flex flex-col items-center justify-between"
-      onMouseEnter={handleMouseEnter}
-      onMouseLeave={handleMouseLeave}
-    >
-      <AnimatedIcon className="h-10 w-10" style={iconAnimationProps} />
-      <animated.span className="mt-2" style={textAnimationProps}>
+    <animated.div className={styles.wrapper} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
+      <AnimatedIcon className={styles.icon} style={iconAnimationProps} />
+      <animated.span className={styles.text} style={textAnimationProps}>
         {name}
       </animated.span>
     </animated.div>

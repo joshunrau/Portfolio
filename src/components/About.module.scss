@@ -1,0 +1,23 @@
+@use "@/styles/abstracts/mixins";
+
+.about {
+  display: flex;
+  flex-direction: column;
+
+  @include mixins.desktop {
+    flex-direction: row;
+  }
+}
+
+.infoContainer {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  justify-content: center;
+}
+
+.avatar {
+  align-self: center;
+  max-height: 50vh;
+  width: auto;
+}

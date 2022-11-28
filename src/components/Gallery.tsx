@@ -4,13 +4,17 @@ import { SiGithub } from 'react-icons/si';
 import { EffectCards, Mousewheel, Navigation, Pagination } from 'swiper';
 import { Swiper, SwiperProps, SwiperSlide } from 'swiper/react';
 
+import styles from './Gallery.module.scss';
+
+import { Project } from '@/interfaces';
+
 import 'swiper/css';
 import 'swiper/css/effect-cards';
 import 'swiper/css/pagination';
 
 const swiperProps: SwiperProps = {
   effect: 'cards',
-  className: 'h-96 p-10',
+  className: styles.swiper,
   grabCursor: true,
   loop: true,
   mousewheel: {
@@ -29,11 +33,11 @@ const Gallery = ({ projects }: GalleryProps) => {
     <div>
       <Swiper {...swiperProps}>
         {projects.map((project) => (
-          <SwiperSlide className="rounded-3xl bg-slate-800 p-5" key={project.name}>
-            <h1 className="text-xl font-extrabold">{project.name}</h1>
+          <SwiperSlide className={styles.swiper} key={project.name}>
+            <h1 className={styles.heading}>{project.name}</h1>
             <p>{project.description}</p>
             <a href={project.ghLink} target="_blank" rel="noreferrer">
-              <SiGithub className="h-10 w-auto" />
+              <SiGithub className={styles.heading} />
             </a>
           </SwiperSlide>
         ))}

@@ -1,0 +1,23 @@
+@use "@/styles/abstracts/variables";
+
+.header {
+  position: absolute;
+  width: 100%;
+  z-index: 1;
+}
+
+.main {
+  height: 100vh;
+  -ms-overflow-style: none;
+  overflow-y: scroll;
+  padding-top: variables.$header-height;
+  scroll-behavior: smooth;
+  scroll-padding-top: variables.$header-height;
+  scroll-snap-type: y mandatory;
+  scrollbar-width: none;
+  width: 100%;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}

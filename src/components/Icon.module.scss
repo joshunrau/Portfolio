@@ -1,0 +1,19 @@
+@use "@/styles/abstracts/variables";
+
+.wrapper {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 6rem;
+  justify-content: center;
+  width: 6rem;
+}
+
+.icon {
+  height: 2rem;
+  width: 2rem;
+}
+
+.text {
+  margin-top: variables.$base-spacing;
+}
